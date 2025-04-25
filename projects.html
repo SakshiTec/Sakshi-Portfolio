@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Projects - Sakshi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Sakshi Chopade</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header><h1>My Projects</h1></header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="container projects">
-    <div class="project-card">
-      <h3>Ambulance Light Circuit</h3>
-      <p>Emergency flashing light system created in our electronics workshop.</p>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Sakshi</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <div class="project-card">
-      <h3>Cooling Chamber</h3>
-      <p>A temperature-controlled chamber using basic electronics for cooling.</p>
+  </header>
+
+  <section class="projects container">
+    <h1>My Projects</h1>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Smart Irrigation System</h3>
+        <p>IoT-powered solution for optimizing water usage in agriculture.</p>
+      </div>
+      <div class="project-card">
+        <h3>Autonomous Robot</h3>
+        <p>Self-driven robot using ultrasonic sensors for obstacle detection.</p>
+      </div>
+      <div class="project-card">
+        <h3>Weather Monitoring System</h3>
+        <p>Real-time environmental monitoring with wireless data transmission.</p>
+      </div>
     </div>
-    <div class="project-card">
-      <h3>Anti-Theft Alarm</h3>
-      <p>Security alarm system that triggers on motion detection or disturbance.</p>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Sakshi Chopade. Crafted with love ✨</p>
     </div>
-    <div class="project-card">
-      <h3>Smart Plant Monitor</h3>
-      <p>Sensor-based system to notify users about plant soil moisture and care.</p>
-    </div>
-  </div>
+  </footer>
 </body>
 </html>
+
