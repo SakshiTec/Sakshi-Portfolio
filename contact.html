@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Contact - Sakshi</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sakshi Chopade</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header><h1>Contact Me</h1></header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="projects.html">Projects</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <div class="container">
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Sakshi</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact container">
+    <h1>Get in Touch</h1>
     <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" placeholder="Sakshi Chopade" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="sakshichopade47@gmail.com" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" rows="5" placeholder="Thank You!!" required></textarea>
-
-      <button type="submit">Send</button>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
     </form>
-  </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Sakshi Chopade. Crafted with love ✨</p>
+    </div>
+  </footer>
 </body>
 </html>
