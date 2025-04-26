@@ -1,0 +1,22 @@
+{
+  "particles": {
+    "number": {
+      "value": 50
+    },
+    "size": {
+      "value": 4
+    },
+    "move": {
+      "speed": 1
+    },
+    "line_linked": {
+      "enable": false
+    },
+    "shape": {
+      "type": "circle"
+    },
+    "color": {
+      "value": "#ffd6e7"
+    }
+  }
+}
