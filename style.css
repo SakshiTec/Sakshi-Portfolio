@@ -19,6 +19,25 @@ body {
   height: 100%;
   z-index: -1;
 }
+.nav-bar {
+  padding: 20px;
+  text-align: left;
+}
+
+.nav-bar .btn {
+  background-color: #f3e5f5;
+  color: #6a1b9a;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-bar .btn:hover {
+  background-color: #ce93d8;
+  transform: scale(1.05);
+}
 
 /* Music Button */
 #music-control {
