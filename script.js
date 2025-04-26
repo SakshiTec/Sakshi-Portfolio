@@ -16,6 +16,48 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 particlesJS.load('particles-js', 'particles.json', function() {
   console.log('Particles.js loaded.');
 });
+// Initialize ParticlesJS
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('Particles.js loaded successfully 🎉');
+});
+
+// Typing Effect for Home Page
+document.addEventListener("DOMContentLoaded", function() {
+  const typedText = document.querySelector(".typed-text");
+  const textArray = ["Passionate Electronics Engineer 💡", "Tech Innovator 🚀", "Dreamer 🌸"];
+  let textArrayIndex = 0;
+  let charIndex = 0;
+
+  function type() {
+    if (charIndex < textArray[textArrayIndex].length) {
+      typedText.textContent += textArray[textArrayIndex].charAt(charIndex);
+      charIndex++;
+      setTimeout(type, 120);
+    } else {
+      setTimeout(erase, 2000);
+    }
+  }
+
+  function erase() {
+    if (charIndex > 0) {
+      typedText.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+      charIndex--;
+      setTimeout(erase, 60);
+    } else {
+      textArrayIndex++;
+      if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+      setTimeout(type, 1000);
+    }
+  }
+
+  if(typedText) type();
+});
+
+// Soft Background Music
+const audio = new Audio('soft-background-music.mp3');
+audio.volume = 0.3; // 30% volume (so it's soft and dreamy)
+audio.loop = true;
+audio.play();
 
 // Typing Effect
 var typed = new Typed('.typing', {
