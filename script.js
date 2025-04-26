@@ -12,9 +12,35 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
     appearOnScroll.unobserve(entry.target);
   });
 }, appearOptions);
-// Particles.js Config
+// Particles Background
 particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('Particles.js loaded!');
+  console.log('Particles.js loaded.');
+});
+
+// Typing Effect
+var typed = new Typed('.typing', {
+  strings: [
+    "Passionate Electronics Engineer 💻",
+    "Creative Tech Innovator 🚀",
+    "Dreamer, Believer, Achiever 🌸"
+  ],
+  typeSpeed: 50,
+  backSpeed: 30,
+  loop: true
+});
+
+// Music Control
+const music = document.getElementById("background-music");
+const control = document.getElementById("music-control");
+
+control.addEventListener("click", () => {
+  if (music.paused) {
+    music.play();
+    control.textContent = "🔊";
+  } else {
+    music.pause();
+    control.textContent = "🔇";
+  }
 });
 
 faders.forEach(fader => {
