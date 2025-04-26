@@ -12,6 +12,10 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
     appearOnScroll.unobserve(entry.target);
   });
 }, appearOptions);
+// Particles.js Config
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('Particles.js loaded!');
+});
 
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
