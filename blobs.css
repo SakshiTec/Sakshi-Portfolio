@@ -1,0 +1,24 @@
+.blob {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at 30% 30%, #ffd1dc, #c4f0f0);
+  border-radius: 50%;
+  opacity: 0.25;
+  animation: morph 10s infinite alternate ease-in-out;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 42% 58% 37% 63% / 60% 37% 63% 40%;
+    transform: translate(0, 0);
+  }
+  100% {
+    border-radius: 63% 37% 58% 42% / 40% 63% 37% 60%;
+    transform: translate(20px, -30px);
+  }
+}
