@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Soft Background Music
 const audio = new Audio('Image/background.mp3');
-audio.volume = 0.3; // 30% volume (so it's soft and dreamy)
+audio.volume = 0.1; // 30% volume (so it's soft and dreamy)
 audio.loop = true;
 audio.play();
 
@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const control = document.getElementById("music-control");
 
   // Set initial volume
-  music.volume = 0.3;
+  music.volume = 0.1;
 
   // Toggle music on click
   control.addEventListener("click", () => {
