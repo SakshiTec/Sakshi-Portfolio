@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // Soft Background Music
-const audio = new Audio('soft-background-music.mp3');
+const audio = new Audio('Image/background.mp3');
 audio.volume = 0.3; // 30% volume (so it's soft and dreamy)
 audio.loop = true;
 audio.play();
