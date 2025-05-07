@@ -67,3 +67,14 @@
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 12px 32px rgba(0,0,0,0.2);
 }
+
+body {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
