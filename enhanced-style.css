@@ -1,1 +1,46 @@
+.project-card {
+  position: relative;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin: 1.5rem 0;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.project-card .project-info {
+  padding: 1rem;
+  background: rgba(255,255,255,0.95);
+  transition: background 0.3s ease;
+}
+
+.project-card h3 {
+  margin-top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
 
