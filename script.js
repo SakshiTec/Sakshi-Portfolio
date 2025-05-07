@@ -73,6 +73,8 @@ var typed = new Typed('.typing', {
 
 // Music Control
 const music = document.getElementById("background-music");
+music.volume = 0.3;
+
 const control = document.getElementById("music-control");
 
 control.addEventListener("click", () => {
@@ -84,6 +86,7 @@ control.addEventListener("click", () => {
     control.textContent = "🔇";
   }
 });
+
 
 faders.forEach(fader => {
   appearOnScroll.observe(fader);
