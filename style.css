@@ -279,3 +279,20 @@ body {
   background-color: #f0f0f0;
   transform: scale(1.1);
 }
+
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #ffd5ec;
+  color: #333;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+  background-color: #ffb3d1;
+}
