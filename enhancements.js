@@ -14,12 +14,3 @@ AOS.init({
   once: true,
 });
 
-// Background music autoplay
-window.addEventListener('DOMContentLoaded', () => {
-  const bgMusic = new Audio('Image/background.mp3'); // Place your music file in /Image
-  bgMusic.loop = true;
-  bgMusic.volume = 0.2;
-  bgMusic.play().catch(() => {
-    console.log("Autoplay blocked. User interaction required.");
-  });
-});
