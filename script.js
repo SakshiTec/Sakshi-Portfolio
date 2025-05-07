@@ -72,20 +72,25 @@ var typed = new Typed('.typing', {
 });
 
 // Music Control
-const music = document.getElementById("background-music");
-music.volume = 0.3;
+window.addEventListener('DOMContentLoaded', () => {
+  const music = document.getElementById("background-music");
+  const control = document.getElementById("music-control");
 
-const control = document.getElementById("music-control");
+  // Set initial volume
+  music.volume = 0.3;
 
-control.addEventListener("click", () => {
-  if (music.paused) {
-    music.play();
-    control.textContent = "🔊";
-  } else {
-    music.pause();
-    control.textContent = "🔇";
-  }
+  // Toggle music on click
+  control.addEventListener("click", () => {
+    if (music.paused) {
+      music.play();
+      control.textContent = "🔊";
+    } else {
+      music.pause();
+      control.textContent = "🔇";
+    }
+  });
 });
+
 
 
 faders.forEach(fader => {
