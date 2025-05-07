@@ -25,3 +25,16 @@ AOS.init({
     }
   });
 </script>
+
+<script>
+  const blurOverlay = document.getElementById("blur-overlay");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 100) {
+      blurOverlay.classList.add("blur-active");
+    } else {
+      blurOverlay.classList.remove("blur-active");
+    }
+  });
+</script>
+
