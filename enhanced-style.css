@@ -1,0 +1,46 @@
+/* enhanced-style.css */
+
+body {
+  background: #f9f9fb;
+  color: #333;
+  font-family: 'Outfit', sans-serif;
+  transition: background 0.5s ease;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  color: #2e2e2e;
+  letter-spacing: 1px;
+}
+
+.container {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+img.profile {
+  border-radius: 50%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease;
+}
+img.profile:hover {
+  transform: scale(1.05);
+}
+
+button, .btn {
+  background-color: #6C63FF;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 10px rgba(108, 99, 255, 0.3);
+  transition: all 0.3s ease;
+}
+button:hover, .btn:hover {
+  background-color: #5848e5;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
