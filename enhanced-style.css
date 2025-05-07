@@ -44,3 +44,12 @@
   transform: scale(1.05);
 }
 
+/* Project Title Slide Animation */
+.project-card h3 {
+  transform: translateY(0);
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover h3 {
+  transform: translateY(-4px);
+}
