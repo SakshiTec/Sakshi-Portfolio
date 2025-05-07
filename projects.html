@@ -18,7 +18,7 @@
   <h1 class="page-title floating">My Projects 🚀</h1>
  <div class="projects-grid">
 
-  <div class="project-card fade-in">
+  <div class="project-card fade-in" data-aos="fade-up">
     <h2>Zero Energy Cooling Chamber (ZECC)</h2>
     <p>
       Built a low-cost, electricity-free chamber to preserve fruits and vegetables using evaporative cooling. Made with bricks, sand, bamboo, and wet gunny bags, it keeps the inside 5–10°C cooler than outside, extending shelf life—ideal for rural areas.
@@ -28,7 +28,7 @@
     </div>
   </div>
 
-  <div class="project-card fade-in">
+  <div class="project-card fade-in" data-aos="fade-up">
     <h2>Anti-Theft Alarm System</h2>
     <p>
       Created a compact electronic circuit that senses unauthorized access using sensors and triggers a loud buzzer alarm. It enhances security for homes, shops, and parked vehicles.
@@ -38,7 +38,7 @@
     </div>
   </div>
 
-  <div class="project-card fade-in">
+  <div class="project-card fade-in" data-aos="fade-up">
     <h2>Ambulance Light System</h2>
     <p>
       Developed a blinking LED light system using basic electronics to alert traffic and ensure quick ambulance movement during emergencies. Improves road safety and response time.
@@ -75,6 +75,14 @@
 <!-- AOS Animation Library -->
 <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000, // Animation lasts 1000ms (1 second)
+    once: true      // Animation happens only once when you scroll down
+  });
+</script>
+
 
 <!-- Typed.js for typing animation -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
