@@ -320,3 +320,14 @@ body {
   color: #fff;
   transform: translateY(-2px);
 }
+
+.blur-on-scroll {
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  transition: backdrop-filter 0.6s ease, -webkit-backdrop-filter 0.6s ease;
+}
+
+.blur-active {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
